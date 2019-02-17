@@ -14,6 +14,7 @@ export class NotesComponent implements OnInit {
   notebooks: Notebook[] = [];
   notes:Note[];
   selectedNotebook: Notebook;
+  searchText: string;
 
   constructor(private apiService: ApiService) { }
 
@@ -38,7 +39,7 @@ export class NotesComponent implements OnInit {
       res => {
         this.notes = res;
       },
-      err=>{alert("Error has occured while getting notes")}
+      err=>{alert("Error has occurred while getting notes")}
     )
   }
 
