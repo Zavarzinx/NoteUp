@@ -1,2 +1,2 @@
 # NoteUp
-Web notebook development using Spring Boot + Angular
+Web notebook, Spring Boot + Angular
